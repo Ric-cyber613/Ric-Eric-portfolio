@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#071428" rx="12"/>
+  <rect x="40" y="40" width="1200" height="640" rx="8" fill="url(#g3)" opacity="0.12"/>
+  <g fill="#e6eef8" font-family="Arial, Helvetica, sans-serif">
+    <text x="80" y="140" font-size="36" font-weight="700">Project Three</text>
+    <text x="80" y="200" font-size="18" fill="#94a3b8">A demo screenshot placeholder for Project Three</text>
+  </g>
+  <g transform="translate(80,240)">
+    <rect width="1100" height="360" rx="6" fill="#021022" opacity="0.9"/>
+    <text x="24" y="48" fill="#f97316" font-size="28" font-family="Arial">API Explorer</text>
+  </g>
+</svg>

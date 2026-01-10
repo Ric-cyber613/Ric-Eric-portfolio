@@ -21,11 +21,22 @@ const formMsg = document.getElementById('formMsg');
 form.addEventListener('submit', e=>{
   e.preventDefault();
   const data = new FormData(form);
-  formMsg.textContent = 'Sending...';
+  const name = data.get('name') || '';
+  const email = data.get('email') || '';
+  const message = data.get('message') || '';
+  formMsg.textContent = 'Opening email client...';
+
+  // Build mailto fallback so users can send directly from their mail app.
+  const subject = encodeURIComponent(`Portfolio message from ${name || email}`);
+  const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+  const mailto = `mailto:rictech634@gmail.com?subject=${subject}&body=${body}`;
+
+  // Open user's default mail client
   setTimeout(()=>{
+    window.location.href = mailto;
     form.reset();
-    formMsg.innerHTML = 'Thanks — message sent (real). <a href="mailto:rictech634@gmail.com">Or send directly via email</a>';
-  },800);
+    formMsg.textContent = 'If your mail app did not open, email rictech634@gmail.com';
+  },300);
 });
 
 // Footer year
