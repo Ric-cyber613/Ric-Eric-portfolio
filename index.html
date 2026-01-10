@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ric Eric — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Ric Eric</h1>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hi, I'm Ric — a front-end developer.</h2>
+        <p>I build accessible, responsive web interfaces and delightful user experiences.</p>
+        <p class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>Selected Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/project1.svg" alt="Project One screenshot" class="screenshot">
+          <h4>Project One</h4>
+          <p>Short description of project one. Tech: HTML, CSS, JS.</p>
+          <a class="link" href="#">Live →</a>
+        </article>
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description of project two. Tech: React, Node.</p>
+          <a class="link" href="#">Repo →</a>
+        </article>
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Short description of project three. Tech: Python, Flask.</p>
+          <a class="link" href="#">Details →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About</h3>
+      <p>I enjoy turning ideas into polished interfaces. I focus on performance, accessibility, and clarity.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:rictech634@gmail.com">rictech634@gmail.com</a></p>
+      <form id="contactForm">
+        <label>
+          Name
+          <input name="name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ric Eric — Built with ♥</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
