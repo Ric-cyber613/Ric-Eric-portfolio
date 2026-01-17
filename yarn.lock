@@ -1,0 +1,6 @@
+# THIS IS A GENERATED FILE, DO NOT EDIT
+# Placeholder yarn.lock added to satisfy GitHub Actions requirement for a lockfile.
+# To create a real lockfile, run 'yarn install' locally and commit the generated yarn.lock.
+
+__metadata: 
+  version: 1
